@@ -1,0 +1,396 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#background {
+    height: 100vh;
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Merriweather", serif;
+}
+
+.input, .output {
+    padding-top: 25vh;
+}
+
+.input {
+    z-index: 1;
+}
+
+.form {
+    position: relative;
+}
+
+label[for=addCustomMessage]{
+    position: absolute;
+    width: 225px;
+    left: 25px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+input,select {
+    padding: 15px;
+}
+
+input[type=text],input[type=submit],textarea {
+    width: 99.4%;
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+input[name=nameSender] {
+    margin-top: 0;
+}
+
+input[name=emailRecipient] {
+    margin-bottom: 1px;
+}
+
+input[type=text]:hover,input[type=submit]:hover,textarea:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+input[type=submit] {
+    box-sizing: border-box;
+    margin: 20px 5px 0;
+}
+
+.user-input {
+    height: 150px;
+    padding: 15px;
+    resize: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    font-style: italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+    font-style: italic;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+    font-style: italic;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    white;
+    font-style: italic;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:    white;
+    font-style: italic;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+    font-style: italic;
+}
+
+.info-text {
+    width: 99.4%;
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    margin: 20px 5px 0;
+}
+
+.info-text-custom {
+    width: 99.4%;
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    margin: 68px 5px 0;
+    clear: both;
+}
+
+.info-text-custom p {
+    margin: 0;
+}
+
+.info-text-message {
+    margin-top: 80px;
+}
+
+#imageSelect {
+    display: none;
+}
+
+.img-options ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.img-options li {
+    float: left;
+    background-color: rgba(0,0,0,0.4);
+    padding: 15px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 200ms;
+}
+
+.img-options li:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.img-options li span {
+    display: block;
+    width: 8px;
+}
+
+.message {
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    padding: 50px;
+    color: white;
+    text-align: left;
+}
+
+.img-options li.selected {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid white;
+}
+
+h1 {
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -205px;
+    right: -210px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 50px #888;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    margin-top: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+
+.address {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: -210px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.address-text {
+    height: 100px;
+    margin-top: 40%;
+    transform: translateY(-50%);
+}
+
+.message a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.new-button {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.4);
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+.new-button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.generic-text {
+    width: 99.4%;
+    box-sizing: border-box;
+    text-align: left;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 10px 35px;
+    margin: 5px;
+}
+
+.customWrapper {
+    position: relative;
+}
+
+#customMessage {
+    display: none;
+    margin-bottom: 0;
+}
+
+#addCustomMessage {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.error-bubble {
+    position: relative;
+    display: none;
+    float: right;
+    width: 424px;
+    height: 33px;
+    margin-top: -47px;
+    margin-right: 10px;
+    padding-right: 15px;
+    line-height: 2.9em;
+    text-align: right;
+    background-color: #ff00003d;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.recipient-info {
+    width: 99.4%;
+    margin: 0 5px 5px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.copyOptIn {
+    width: 99.4%;
+    margin: 0 5px 5px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+
+#getCopy {
+    cursor: pointer;
+}
+
+label[for="getCopy"] {
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.privacy {
+    width: 99.4%;
+    margin: 0 5px 5px;
+    color: white;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+}
+
+.consent-label a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
+
+#privacy {
+    font-family: "Merriweather", serif;
+    width: 70%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#privacy h1 {
+    color: black;
+}
+
+.smartphone-only {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        right: 0;
+    }
+    .address {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    #background {
+        background-position: -50px;
+    }
+    .logo {
+        width: 99.4%;
+        height: 100px;
+        bottom: -125px;
+        top: initial;
+    }
+    .logo-placeholder img {
+        margin-top: 0;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
+    .error-bubble {
+        margin-top: 0;
+    }
+    .info-text {
+        margin-top: 40px;
+    }
+    .logo-placeholder {
+        margin-bottom: 50px;
+    }
+}

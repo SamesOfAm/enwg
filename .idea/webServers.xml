@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c5db38d-706d-45cd-96fe-929b31097da8" name="Host" url="http://ftp.klapproth-koch.de">
+        <fileTransfer host="ftp.klapproth-koch.de" port="22" rootFolder="/grusskarte/enwg" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
